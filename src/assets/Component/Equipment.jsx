@@ -1,35 +1,55 @@
 import React from 'react';
+import concrete from '/image/equipment/concrete-mixer.jpg';
+import dumper from '/image/equipment/OIP.jpg';
+import cuttingMachine from '/image/equipment/cutting machine.jpg';
+import drillingMachine from '/image/equipment/borehole drillig.jpg';
+import vibrator from '/image/equipment/vibrator.jpg';
+import rammer from '/image/equipment/rammer.jpg';
+import plateCompactors from '/image/equipment/plate Compactors.jpg';
+import dieselTipper from '/image/equipment/30 Tonne Tippers.avif';
+import trailer from '/image/equipment/32 Tons Trailer.jpg';
+import pickupTruck from '/image/equipment/Toyota Pickup Truck.jpg';
+import saloonC from '/image/equipment/Saloon C.jpg';
+import saloonCars from '/image/equipment/Saloon Cars.jpg';
+import soilCompactors from '/image/equipment/Soil Heavy Compactors.jpg';
+import asphaltPavers from '/image/equipment/Asphalt Pavers.jpg';
+import asphaltRollers from '/image/equipment/Asphalt Rollers.jpg';
+import cat920 from '/image/equipment/CAT 920 Pay Loaders.jpg';
+import graders from '/image/equipment/Graders.jpg';
+import bitumenSprayer from '/image/equipment/Bitumen Sprayer.jpg';
+import waterBowers from '/image/equipment/Water Bowers.jpg';
+import cat815 from '/image/equipment/CAT 815 Compactors.jpg';
+
 import { Card, CardContent, CardMedia, Typography, Grid, Container } from '@mui/material';
 
 const EquipmentCatalog = () => {
   const equipmentList = [
-    { name: 'Concrete Mixers', quantity: 4, image: '/image/equipment/concrete-mixer.jpg' },
-    { name: 'Dumpers', quantity: 5, image: '/image/equipment/OIP.jpg' },
-    { name: 'Cutting Bending Machines', quantity: 3, image: '/image/equipment/cutting machine.jpg' },
-    { name: 'Heavy Duty Drilling Machines', quantity: 1, image: '/image/equipment/borehole drillig.jpg' },
-    { name: 'Pendulum Internal Vibrators', quantity: 1, image: '/image/equipment/vibrator.jpg' },
-    { name: 'Vibrations Rammer', quantity: 1, image: '/image/equipment/rammer.jpg' },
-    { name: 'Plate Compactors', quantity: 2, image: '/image/equipment/plate Compactors.jpg' },
-    { name: '5 Tons Morries 830 WF Diesel Tipper', quantity: 1, image: '/image/equipment/30 Tonne Tippers.avif' },
-    { name: '32 Tons Trailer', quantity: 5, image: '/image/equipment/32 Tons Trailer.jpg' },
-    { name: 'Toyota Pickup Truck', quantity: 1, image: '/image/equipment/Toyota Pickup Truck.jpg' },
-    { name: 'Saloon C', quantity: 1, image: '/image/equipment/Saloon C.jpg' },
-    { name: 'Saloon Cars', quantity: 3, image: '/image/equipment/Saloon Cars.jpg' },
-    { name: 'Soil Heavy Compactors', quantity: 2, image: '/image/equipment/Soil Heavy Compactors.jpg' },
-    { name: 'Asphalt Pavers', quantity: 2, image: '/image/equipment/Asphalt Pavers.jpg' },
-    { name: 'Asphalt Rollers', quantity: 1, image: '/image/equipment/Asphalt Rollers.jpg' },
-    { name: 'CAT 920 Pay Loaders', quantity: 1, image: '/image/equipment/CAT 920 Pay Loaders.jpg' },
-    { name: 'Graders', quantity: 1, image: '/image/equipment/Graders.jpg' },
-    { name: 'Bitumen Sprayer', quantity: 1, image: '/image/equipment/Bitumen Sprayer.jpg' },
-    { name: 'Water Bowers', quantity: 3, image: '/image/equipment/Water Bowers.jpg' },
-    { name: 'CAT 815 Compactors', quantity: 1, image: '/image/equipment/CAT 815 Compactors.jpg' },
-    { name: '30 Tonne Tippers', quantity: 1, image: '/image/equipment/30 Tonne tippers.avif' }
+    { name: 'Concrete Mixers', quantity: 4, image: concrete },
+    { name: 'Dumpers', quantity: 5, image: dumper },
+    { name: 'Cutting Bending Machines', quantity: 3, image: cuttingMachine },
+    { name: 'Heavy Duty Drilling Machines', quantity: 1, image: drillingMachine },
+    { name: 'Pendulum Internal Vibrators', quantity: 1, image: vibrator },
+    { name: 'Vibrations Rammer', quantity: 1, image: rammer },
+    { name: 'Plate Compactors', quantity: 2, image: plateCompactors },
+    { name: '5 Tons Morries 830 WF Diesel Tipper', quantity: 1, image: dieselTipper },
+    { name: '32 Tons Trailer', quantity: 5, image: trailer },
+    { name: 'Toyota Pickup Truck', quantity: 1, image: pickupTruck },
+    { name: 'Saloon C', quantity: 1, image: saloonC },
+    { name: 'Saloon Cars', quantity: 3, image: saloonCars },
+    { name: 'Soil Heavy Compactors', quantity: 2, image: soilCompactors },
+    { name: 'Asphalt Pavers', quantity: 2, image: asphaltPavers },
+    { name: 'Asphalt Rollers', quantity: 1, image: asphaltRollers },
+    { name: 'CAT 920 Pay Loaders', quantity: 1, image: cat920 },
+    { name: 'Graders', quantity: 1, image: graders },
+    { name: 'Bitumen Sprayer', quantity: 1, image: bitumenSprayer },
+    { name: 'Water Bowers', quantity: 3, image: waterBowers },
+    { name: 'CAT 815 Compactors', quantity: 1, image: cat815 }
   ];
 
   return (
     <Container maxWidth="lg" sx={{ mt: 16 }}>
       <Card sx={{ mb: 4, p: 2, textAlign: 'center' }}>
-        <Typography variant="h4" fontWeight="bold" >
+        <Typography variant="h4" fontWeight="bold">
           I.V JATAU GLOBAL RESOURCES LTD - Equipment Catalog
         </Typography>
         <Typography variant="subtitle1" color="textSecondary">

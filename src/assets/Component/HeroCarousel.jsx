@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, ExternalLink } from 'lucide-react';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate
+import project1 from '/image/project1.jpg'
+import project2 from '/image/project2.jpg'
+import project3 from '/image/project3.jpg'
+import project4 from '/image/CEO.jpg'
 
 const HeroCarousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -11,7 +15,7 @@ const HeroCarousel = () => {
 
   const slides = [
     {
-      image: "/image/project1.jpg",
+      image: project1,
       title: "Building Tomorrow's Infrastructure",
       subtitle: "Leading the way in construction excellence",
       cta: "View Our Projects",
@@ -19,7 +23,7 @@ const HeroCarousel = () => {
       accent: "from-blue-500/30 to-purple-500/30"
     },
     {
-      image: "/image/project2.jpg",
+      image: project2,
       title: "Engineering Excellence",
       subtitle: "Innovative solutions for complex challenges",
       cta: "Our Services",
@@ -27,7 +31,7 @@ const HeroCarousel = () => {
       accent: "from-emerald-500/30 to-blue-500/30"
     },
     {
-      image: "/image/project3.jpg",
+      image: project3,
       title: "Global Procurement Expertise",
       subtitle: "Reliable supply chain management",
       cta: "Learn More",
@@ -35,7 +39,7 @@ const HeroCarousel = () => {
       accent: "from-purple-500/30 to-pink-500/30"
     },
     {
-      image: "/image/CEO.jpg",
+      image: project4,
       title: "Leadership Vision",
       subtitle: "Driving innovation and sustainable growth",
       cta: "Meet Our Team",
