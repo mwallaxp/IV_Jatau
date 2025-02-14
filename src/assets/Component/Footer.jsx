@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaMapMarkerAlt, FaPhone, FaEnvelope } from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -10,27 +10,27 @@ const Footer = () => {
           <h3 className="text-lg font-bold mb-4 text-white">Info</h3>
           <ul className="space-y-2">
             <li>
-              <a href="/about" className="hover:underline">
+              <a href="/about" className="hover:text-blue-400 transition-colors duration-300">
                 About
               </a>
             </li>
             <li>
-              <a href="/services" className="hover:underline">
+              <a href="/services" className="hover:text-blue-400 transition-colors duration-300">
                 Services
               </a>
             </li>
             <li>
-              <a href="/terms" className="hover:underline">
+              <a href="/terms-and-conditions" className="hover:text-blue-400 transition-colors duration-300">
                 Terms and Conditions
               </a>
             </li>
             <li>
-              <a href="/privacy" className="hover:underline">
+              <a href="/terms-and-conditions" className="hover:text-blue-400 transition-colors duration-300">
                 Privacy Policy
               </a>
             </li>
             <li>
-              <a href="/contact" className="hover:underline">
+              <a href="/contact" className="hover:text-blue-400 transition-colors duration-300">
                 Contact Us
               </a>
             </li>
@@ -41,33 +41,19 @@ const Footer = () => {
         <div>
           <h3 className="text-lg font-bold mb-4 text-white">Products</h3>
           <ul className="space-y-2">
+            
             <li>
-              <a href="/products/geotextiles" className="hover:underline">
-                Geotextiles and Geomembranes
-              </a>
-            </li>
-            <li>
-              <a href="/products/rhinomat" className="hover:underline">
-                RhinoMat® and RhinoSkin®
-              </a>
-            </li>
-            <li>
-              <a href="/products/gabion-boxes" className="hover:underline">
-                Gabion Boxes & Reno Mattresses
-              </a>
-            </li>
-            <li>
-              <a href="/products/megadeck" className="hover:underline">
+              <a href="/products/megadeck" className="hover:text-blue-400 transition-colors duration-300">
                 Megadeck and Duradeck
               </a>
             </li>
             <li>
-              <a href="/products/drainage-pipes" className="hover:underline">
+              <a href="/products/drainage-pipes" className="hover:text-blue-400 transition-colors duration-300">
                 Drainage and Water Supply Pipes
               </a>
             </li>
             <li>
-              <a href="/products/ducting-pipes" className="hover:underline">
+              <a href="/products/ducting-pipes" className="hover:text-blue-400 transition-colors duration-300">
                 Ducting Pipes and Cable Management
               </a>
             </li>
@@ -79,17 +65,17 @@ const Footer = () => {
           <h3 className="text-lg font-bold mb-4 text-white">Quick Links</h3>
           <ul className="space-y-2">
             <li>
-              <a href="/blog" className="hover:underline">
+              <a href="/blog" className="hover:text-blue-400 transition-colors duration-300">
                 Blog
               </a>
             </li>
             <li>
-              <a href="/careers" className="hover:underline">
+              <a href="/careers" className="hover:text-blue-400 transition-colors duration-300">
                 Careers
               </a>
             </li>
             <li>
-              <a href="/support" className="hover:underline">
+              <a href="/support" className="hover:text-blue-400 transition-colors duration-300">
                 Support
               </a>
             </li>
@@ -99,53 +85,61 @@ const Footer = () => {
         {/* Contact Section */}
         <div>
           <h3 className="text-lg font-bold mb-4 text-white">Contact Us</h3>
-          <p className="text-sm">
-            No. 09, Floor 2B Close, Off Julius Nyerere Street, By, FHA, Headquarters <br />
-            Asokoro Abuja FCT, Nigeria
-          </p>
-          <p className="text-sm mt-2">
-            Phone: <a href="tel:+2347061002325" className="hover:underline">+2347061002325</a>
-          </p>
-          <p className="text-sm mt-2">
-            Phone: <a href="tel:+2347061002325" className="hover:underline">+2347061002325</a>
-          </p>
-          <p className="text-sm mt-2">
-            Email: <a href="mailto:jataudollar@gmail.com" className="hover:underline">jataudollar@gmail.com.com</a>
-          </p>
-          <p className="text-sm mt-2">
-            Email: <a href="mailto:ivjatau@gmail.com" className="hover:underline">ivjatau@gmail.com.com</a>
-          </p>
+          <div className="space-y-3">
+            <div className="flex items-start space-x-3">
+              <FaMapMarkerAlt className="w-5 h-5 text-blue-400 mt-1" />
+              <p className="text-sm">
+                No. 09, Floor 2B Close, Off Julius Nyerere Street, By, FHA, Headquarters <br />
+                Asokoro Abuja FCT, Nigeria
+              </p>
+            </div>
+            <div className="flex items-center space-x-3">
+              <FaPhone className="w-5 h-5 text-blue-400" />
+              <a href="tel:+2347061002325" className="text-sm hover:text-blue-400 transition-colors duration-300">
+                +2347061002325
+              </a>
+            </div>
+            <div className="flex items-center space-x-3">
+              <FaEnvelope className="w-5 h-5 text-blue-400" />
+              <a href="mailto:jataudollar@gmail.com" className="text-sm hover:text-blue-400 transition-colors duration-300">
+                jataudollar@gmail.com
+              </a>
+            </div>
+          </div>
 
           {/* Social Media Links */}
-          <div className="mt-4 flex space-x-4">
-            <a
-              href="#"
-              aria-label="Facebook"
-              className="text-gray-400 hover:text-blue-500 transition-colors duration-300"
-            >
-              <FaFacebook className="w-6 h-6" />
-            </a>
-            <a
-              href="#"
-              aria-label="Twitter"
-              className="text-gray-400 hover:text-blue-400 transition-colors duration-300"
-            >
-              <FaTwitter className="w-6 h-6" />
-            </a>
-            <a
-              href="#"
-              aria-label="Instagram"
-              className="text-gray-400 hover:text-pink-500 transition-colors duration-300"
-            >
-              <FaInstagram className="w-6 h-6" />
-            </a>
-            <a
-              href="#"
-              aria-label="LinkedIn"
-              className="text-gray-400 hover:text-blue-700 transition-colors duration-300"
-            >
-              <FaLinkedin className="w-6 h-6" />
-            </a>
+          <div className="mt-6">
+            <h3 className="text-lg font-bold mb-4 text-white">Follow Us</h3>
+            <div className="flex space-x-4">
+              <a
+                href="#"
+                aria-label="Facebook"
+                className="text-gray-400 hover:text-blue-500 transition-colors duration-300"
+              >
+                <FaFacebook className="w-6 h-6" />
+              </a>
+              <a
+                href="#"
+                aria-label="Twitter"
+                className="text-gray-400 hover:text-blue-400 transition-colors duration-300"
+              >
+                <FaTwitter className="w-6 h-6" />
+              </a>
+              <a
+                href="#"
+                aria-label="Instagram"
+                className="text-gray-400 hover:text-pink-500 transition-colors duration-300"
+              >
+                <FaInstagram className="w-6 h-6" />
+              </a>
+              <a
+                href="#"
+                aria-label="LinkedIn"
+                className="text-gray-400 hover:text-blue-700 transition-colors duration-300"
+              >
+                <FaLinkedin className="w-6 h-6" />
+              </a>
+            </div>
           </div>
 
           {/* Newsletter Subscription */}

@@ -4,7 +4,7 @@ const Procurement = () => {
   return (
     <div className="p-8 bg-gray-50 min-h-screen">
       {/* Introduction Section */}
-      <section className="max-w-7xl mx-auto text-center py-12">
+      <section className="max-w-7xl mx-auto text-center py-12 mt-5">
         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
           Global Procurement Expertise
         </h1>
@@ -107,6 +107,8 @@ const Procurement = () => {
             That's why we:
           </p>
           <ul className="list-disc list-inside text-gray-600 space-y-4">
+            <li>Having the lences and lagal permission to optain and import all products </li>
+            <li>Expartes in aquiring genuine and best fit product/services for your requirements</li>
             <li>Use certified and reliable logistics partners.</li>
             <li>Ensure proper packaging and handling of all equipment.</li>
             <li>Provide real-time tracking for all shipments.</li>

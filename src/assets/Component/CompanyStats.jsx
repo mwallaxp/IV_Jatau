@@ -60,7 +60,7 @@ const CompanyStats = () => {
                   </svg>
                 </div>
                 <div>
-                  <span className="text-4xl font-bold text-white">+180</span>
+                  <span className="text-4xl font-bold text-white">+18</span>
                   <p className="text-blue-100">Infrastructure projects</p>
                 </div>
               </div>
@@ -101,7 +101,7 @@ const CompanyStats = () => {
                 </div>
                 <div>
                   <h3 className="font-bold text-white">FURNITURE PRODUCTION</h3>
-                  <p className="text-sm text-teal-100">Production facilities include AFP furniture production</p>
+                  <p className="text-sm text-teal-100">Production facilities include furniture production</p>
                 </div>
               </div>
             </div>
@@ -131,7 +131,7 @@ const CompanyStats = () => {
             
             <div className="bg-white/5 p-4 rounded-lg backdrop-blur-sm">
               <p className="text-sm text-teal-100">
-                Founding member of NIBUCAA and member of the United Nations Global Compact
+                The foundation of global growth 
               </p>
             </div>
           </div>
@@ -147,7 +147,7 @@ const CompanyStats = () => {
               <div className="flex items-center justify-between p-4 bg-blue-50 rounded-lg group/item hover:bg-blue-100 transition-colors">
                 <div className="flex items-center">
                   <TrendingUp size={32} className="mr-4 text-blue-600" />
-                  <p className="text-sm text-blue-900">Publicly traded on Nigerian stock exchange</p>
+                  <p className="text-sm text-blue-900">Not yet Publicly traded on Nigerian stock exchange</p>
                 </div>
               </div>
               
@@ -155,7 +155,7 @@ const CompanyStats = () => {
                 <div className="flex items-center">
                   <BarChart size={32} className="mr-4 text-blue-600" />
                   <div>
-                    <span className="text-4xl font-bold text-blue-900">443</span>
+                    <span className="text-4xl font-bold text-blue-900">43</span>
                     <p className="text-sm text-blue-700">Group turnover (Million Naira)*</p>
                   </div>
                 </div>

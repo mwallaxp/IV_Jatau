@@ -15,6 +15,8 @@ import Fencing from './assets/Component/Pages/Fencing';
 import ContactForm from './assets/Component/Pages/ContactForm';
 import Procurement from './assets/Component/Pages/Procurement';
 import Leadership from './assets/Component/Pages/Leadership';
+import ContractorHealthAndSafetyPolicy from './assets/Component/ContractorHealthAndSafetyPolicy';
+import EquipmentCatalog from './assets/Component/Equipment';
 
 function App() {
   return (
@@ -26,7 +28,7 @@ function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/businesses/consulting" element={<Consulting />} />
         <Route path="/businesses/Drilling" element={<Drilling />} />
-        <Route path="/businesses/Fencing" element={<Fencing />} />
+        <Route path="/businesses/fencing" element={<Fencing />} />
         <Route path="/products/hardware" element={<Hardware />} />
         <Route path="/products/software" element={<Software />} />
         <Route path="/projects" element={<Projects />} />
@@ -34,7 +36,9 @@ function App() {
         <Route path="/contact" element={<ContactForm />} />
         <Route path="/procurement" element={<Procurement />} />
         <Route path="/about/leadership" element={<Leadership />} />
-        
+        <Route path="/terms-and-conditions" element={<ContractorHealthAndSafetyPolicy/>}/>  
+        <Route path="/precurement" element={<Procurement/>}/> 
+        <Route path="/equipment" element={<EquipmentCatalog/>}/>
         
       </Routes>
       <Footer/>

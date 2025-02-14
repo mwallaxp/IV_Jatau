@@ -52,12 +52,13 @@ const Navbar = () => {
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
             <div className="flex flex-col">
-              <span className="text-2xl font-bold text-blue-400">IV_JATAU</span>
+              {/* <span className="text-2xl font-bold text-blue-400">IV_JATAU</span>
               <span className="text-xl font-bold text-blue-300">
                 GLOBAL RESOURCES LTD
-              </span>
+              </span> */}
+              <img src="/image/logo-iv.jpg" width={50} ></img>
               <span className="text-xs text-gray-300">
-                ENGINEERING. PROCUREMENT. CONSTRUCTION.
+                {/* ENGINEERING. PROCUREMENT. CONSTRUCTION. */}
               </span>
             </div>
 
@@ -111,39 +112,21 @@ const Navbar = () => {
                   onClick={() => toggleDropdown("products")}
                   className="flex items-center hover:text-blue-400"
                 >
-                  Products <ChevronDown size={16} className="ml-1" />
+                  Ultimate <ChevronDown size={16} className="ml-1" />
                 </button>
                 {dropdownOpen.products && (
                   <div className="absolute top-full left-0 min-w-[150px] bg-slate-800 text-white py-2 rounded shadow-lg z-50">
                     <Link
-                      to="/products/investment"
+                      to="/precurement"
                       className="block px-4 py-2 hover:bg-blue-500"
                     >
-                      Investment
+                      Precurement
                     </Link>
                     <Link
-                      to="/products/equipment"
+                      to="/equipment"
                       className="block px-4 py-2 hover:bg-blue-500"
                     >
                       Equipment
-                    </Link>
-                    <Link
-                      to="/products/tools"
-                      className="block px-4 py-2 hover:bg-blue-500"
-                    >
-                      Tools
-                    </Link>
-                    <Link
-                      to="/products/machines"
-                      className="block px-4 py-2 hover:bg-blue-500"
-                    >
-                      Machines
-                    </Link>
-                    <Link
-                      to="/products/ideas"
-                      className="block px-4 py-2 hover:bg-blue-500"
-                    >
-                      Ideas
                     </Link>
                   </div>
                 )}
@@ -152,10 +135,10 @@ const Navbar = () => {
               <NavLink to="/projects" className="hover:text-blue-400">
                 Projects
               </NavLink>
-              <NavLink to="/news" className="hover:text-blue-400">
-                News & Events
+          
+              <NavLink to="/terms-and-conditions" className="hover:text-blue-400">
+                Terms and Condition
               </NavLink>
-              {/* Updated Contact Us Link */}
               <NavLink
                 to="/contact"
                 className="bg-blue-400 text-slate-900 px-6 py-2 rounded hover:bg-slate-600"
@@ -223,7 +206,7 @@ const Navbar = () => {
                     to="/businesses/fencing"
                     className="block px-3 py-2 hover:bg-blue-500 rounded"
                   >
-                    Fencing
+                    Fencing 
                   </Link>
                 </div>
               )}
@@ -235,15 +218,15 @@ const Navbar = () => {
                 onClick={() => toggleDropdown("products")}
                 className="flex justify-between w-full px-3 py-2 hover:bg-slate-700 rounded"
               >
-                Products <ChevronDown size={16} />
+                Ultimate <ChevronDown size={16} />
               </button>
               {dropdownOpen.products && (
                 <div className="pl-4">
                   <Link
-                    to="/products/investment"
+                    to="/precurement"
                     className="block px-3 py-2 hover:bg-blue-500 rounded"
                   >
-                    Investment
+                    Preurement
                   </Link>
                   <Link
                     to="/products/equipment"
@@ -255,20 +238,10 @@ const Navbar = () => {
                     to="/products/tools"
                     className="block px-3 py-2 hover:bg-blue-500 rounded"
                   >
-                    Tools
+                    Equipment
                   </Link>
-                  <Link
-                    to="/products/machines"
-                    className="block px-3 py-2 hover:bg-blue-500 rounded"
-                  >
-                    Machines
-                  </Link>
-                  <Link
-                    to="/products/ideas"
-                    className="block px-3 py-2 hover:bg-blue-500 rounded"
-                  >
-                    Ideas
-                  </Link>
+                 
+                  
                 </div>
               )}
             </div>
@@ -279,11 +252,12 @@ const Navbar = () => {
             >
               Projects
             </Link>
+            {/* "News & Events" Link removed */}
             <Link
-              to="/news"
+              to="/terms-and-conditions"
               className="block px-3 py-2 hover:bg-slate-700 rounded"
             >
-              News & Events
+              Terms and Condition
             </Link>
             <Link
               to="/contact"
