@@ -51,19 +51,20 @@ const Navbar = () => {
         <div className="w-full px-4">
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
+            <div>
+            <img src='https://res.cloudinary.com/dt7iegu3q/image/upload/v1739568229/iv-jatau-logo.jpg' width={50} ></img>
+            </div>
             <div className="flex flex-col">
-              {/* <span className="text-2xl font-bold text-blue-400">IV_JATAU</span>
-              <span className="text-xl font-bold text-blue-300">
+              <span className="text-xl font-bold text-blue-400">I.V JATAU</span>
+              <span className=" font-bold text-blue-300">
                 GLOBAL RESOURCES LTD
-              </span> */}
-              <img src="/image/logo-iv.jpg" width={50} ></img>
-              <span className="text-xs text-gray-300">
-                {/* ENGINEERING. PROCUREMENT. CONSTRUCTION. */}
               </span>
+              {/* <img src="/image/logo-iv.jpg" width={50} ></img> */}
+              
             </div>
 
             {/* Desktop Menu */}
-            <div className="hidden lg:flex space-x-8">
+            <div className="hidden lg:flex space-x-6">
               <NavLink to="/" className="hover:text-blue-400">
                 Home
               </NavLink>
