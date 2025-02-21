@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, ExternalLink } from 'lucide-react';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate
-import project1 from '/image/project1.jpg'
-import project2 from '/image/project2.jpg'
-import project3 from '/image/project3.jpg'
-import project4 from '/image/CEO.jpg'
+
+const project1 = 'https://res.cloudinary.com/dt7iegu3q/image/upload/v1739568322/IMG-20250114-WA0000_kqqpur.jpg'
+const project2 = 'https://res.cloudinary.com/dt7iegu3q/image/upload/v1739568378/project2.jpg'
+const project3 = 'https://res.cloudinary.com/dt7iegu3q/image/upload/v1739567631/overhead.jpg'
+const project4 = 'https://res.cloudinary.com/dt7iegu3q/image/upload/v1740011047/ceo.jpg'
 
 const HeroCarousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
