@@ -5,7 +5,7 @@ import cuttingMachine from '/image/equipment/cutting machine.jpg';
 import drillingMachine from '/image/equipment/borehole drillig.jpg';
 import vibrator from '/image/equipment/vibrator.jpg';
 import rammer from '/image/equipment/rammer.jpg';
-import plateCompactors from '/image/equipment/plate Compactors.jpg';
+// import plateCompactors from '/image/equipment/plate Compactors.jpg';
 import dieselTipper from '/image/equipment/30 Tonne Tippers.avif';
 import trailer from '/image/equipment/32 Tons Trailer.jpg';
 import pickupTruck from '/image/equipment/Toyota Pickup Truck.jpg';
